@@ -6,17 +6,18 @@ import './App.css'
 import { Navbar } from './Navbar'
 import Banner from './Banner'
 import Stats from './Stats'
+import DigitalTools from './DigitalTools'
+import Models from './models'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Navbar />
       <hr className="border-t border-gray-200" />
       <Banner />
       <Stats />
-
+      <DigitalTools />
+      <Models />   {/* ← ONLY THIS */}
     </>
   )
 }

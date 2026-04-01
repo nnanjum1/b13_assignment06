@@ -1,6 +1,6 @@
 const Stats = () => {
     return (
-        <div className="flex py-15 items-center mb-30 justify-center mx-auto gap-30 bg-gradient-to-r from-blue-500 to-purple-500">
+        <div className="flex flex grow py-15 items-center mb-30 justify-center mx-auto gap-30 bg-gradient-to-r from-blue-500 to-purple-500">
             <div>
                 <h1 className="text-[60px] font-extrabold text-white">50K+</h1>
                 <p className="text-[24px] font-medium text-white">Active Users</p>
