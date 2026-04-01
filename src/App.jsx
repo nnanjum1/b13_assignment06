@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import { Navbar } from './Navbar'
 import Banner from './Banner'
+import Stats from './Stats'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <hr className="border-t border-gray-200" />
       <Banner />
+      <Stats />
 
     </>
   )
