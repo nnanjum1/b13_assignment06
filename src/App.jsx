@@ -8,8 +8,15 @@ import Banner from './Banner'
 import Stats from './Stats'
 import DigitalTools from './DigitalTools'
 import Models from './models'
+import { ToastContainer } from 'react-toastify'
+import ToolTabs from './ToolTab'
+import CartTab from './CartTab'
+import GetStarted from './GetStarted'
 
 function App() {
+  const [activeTab, setActiveTab] = useState("products");
+  const [cart, setCart] = useState([]);
+
   return (
     <>
       <Navbar />
@@ -17,7 +24,20 @@ function App() {
       <Banner />
       <Stats />
       <DigitalTools />
-      <Models />   {/* ← ONLY THIS */}
+      <ToolTabs
+        cart={cart}
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+      />
+      {activeTab === "products" && (
+        <Models cart={cart} setCart={setCart} />
+      )}
+
+      {activeTab === "cart" && (
+        <CartTab cart={cart} setCart={setCart} />
+      )}
+      <GetStarted />
+      <ToastContainer position="top-right" />
     </>
   )
 }

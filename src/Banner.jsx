@@ -1,8 +1,8 @@
 const Banner = () => {
     return (
-        <div className="Banner my-[85px] flex gap-15 w-[90%] md:w-[75%] md:mx-auto">
-            <div >
-                <div className="inline-flex bg-purple-100 items-center gap-1.5 rounded-full py-2 px-4 mb-4">
+        <div className="Banner my-[85px] flex md:flex-wrap gap-10 w-[90%] md:w-[75%] md:mx-auto">
+            <div className="w-[53%] space-y-4 flex flex-col  justify-center" >
+                <div className="inline-flex w-fit bg-purple-100 items-center gap-1.5 rounded-full py-2 px-4 mb-4">
                     <div className="w-4 h-4 rounded-full  bg-purple-200 flex items-center justify-center">
                         <div className="w-3 h-3 rounded-full  bg-purple-300 flex items-center justify-center" >
                             <div className="w-1.5 h-1.5  rounded bg-purple-500 flex items-center justify-center">
@@ -12,7 +12,7 @@ const Banner = () => {
                     <p className="text-[16px] font-medium text-purple-500">New: AI-Powered Tools Available</p>
                 </div>
                 <div>
-                    <h1 className="text-[72px] text-[#101727] font-extrabold">Supercharge Your Digital Workflow
+                    <h1 className="text-[60px] md:text-[65px]  text-[#101727] font-extrabold">Supercharge Your Digital Workflow
                     </h1>
                     <p className="text-[18px] text-[#627382] mt-4">Access premium AI tools, design assets, templates, and productivity
                         software—all in one place. Start creating faster today.
