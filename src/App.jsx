@@ -13,6 +13,8 @@ import ToolTabs from './ToolTab'
 import CartTab from './CartTab'
 import GetStarted from './GetStarted'
 import Pricing from './Pricing'
+import ReadyToTransform from './ReadyToTransform'
+import Footer from './Footer'
 
 function App() {
   const [activeTab, setActiveTab] = useState("products");
@@ -39,6 +41,8 @@ function App() {
       )}
       <GetStarted />
       <Pricing />
+      <ReadyToTransform />
+      <Footer />
       <ToastContainer position="top-right" />
     </>
   )

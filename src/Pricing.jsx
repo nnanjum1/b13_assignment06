@@ -5,7 +5,7 @@ const Pricing = () => {
         <div className='bg-white mb-20'>
 
 
-            <h1 className="text-[48px] text-center font-extrabold">Simple, Transparent Pricing</h1>
+            <h1 className="text-[48px] text-center font-extrabold mt-20">Simple, Transparent Pricing</h1>
             <p className="text-[16px] text-gray-400 text-center">Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-[90%] md:w-[75%] mx-auto p-8">
                 <div className='p-6 rounded-xl bg-gray-50 border border-gray-200'>
@@ -30,7 +30,7 @@ const Pricing = () => {
 
 
                 <div className=' relative p-6 rounded-xl bg-gradient-to-r from-blue-500 to-purple-500 '>
-                    <div className='absolute -top-4 left-1/2 -translate-x-1/2 bg-orange-100 px-3 py-1.5 text-center rounded-full'><p className='font-medium text-orange-700 '>Most Popular</p></div>
+                    <div className='absolute -top-5 left-1/2 -translate-x-1/2 bg-orange-100 px-3 py-1.5 text-center rounded-full'><p className='font-medium text-orange-700 '>Most Popular</p></div>
                     <h3 className='text-[24px] text-white font-bold'>Pro</h3>
                     <p className='text-[16px] text-white'>Best for professionals</p>
 
@@ -70,7 +70,7 @@ const Pricing = () => {
 
                         </ul>
                     </div>
-                    <button className=' bg-gradient-to-r mt-6 from-blue-500 to-purple-500 text-white text-[16px] font-bold py-4 w-full rounded-full'>Contact Sales</button>
+                    <button className=' bg-gradient-to-r mt-20 from-blue-500 to-purple-500 text-white text-[16px] font-bold py-4 w-full rounded-full'>Contact Sales</button>
                 </div>
 
             </div>
