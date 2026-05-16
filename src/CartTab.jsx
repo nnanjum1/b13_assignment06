@@ -18,7 +18,7 @@ const CartTab = ({ cart, setCart }) => {
     );
 
     return (
-        <div className='w-[90%] md:w-[75%] border mt-10 mb-20 border-gray-200 rounded-2xl p-10 mx-auto'>
+        <div className='w-[90%] md:w-[75%] border border-gray-200 mt-10 mb-20  rounded-2xl p-10 mx-auto'>
 
             <h2 className="text-[24px] font-bold mb-6">Your Cart</h2>
 
@@ -64,7 +64,16 @@ const CartTab = ({ cart, setCart }) => {
                 </h3>
             </div>
 
-            <button className='bg-gradient-to-r from-blue-500 to-purple-500 text-white text-[16px] text-center p-4 rounded-full font-bold w-full mt-4'>
+            <button
+                onClick={() => setCart([])}
+                disabled={cart.length === 0}
+                className={`text-[16px] text-center p-4 rounded-full font-bold w-full mt-4
+        ${cart.length === 0
+                        ? "bg-gray-300 text-gray-500 cursor-not-allowed"
+                        : "bg-gradient-to-r from-blue-500 to-purple-500 text-white"
+                    }
+    `}
+            >
                 Proceed To Checkout
             </button>
 

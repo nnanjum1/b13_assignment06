@@ -29,10 +29,10 @@ const GetStarted = () => {
             <p className="text-[16px] text-gray-400">Start using premium digital tools in minutes, not hours.</p>
 
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-7 mt-10 w-[90%] md:w-[75%]">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-7 mt-10 w-[90%] md:w-[75%] mx-auto p-8">
 
                 {steps.map((step, index) => (
-                    <div key={index} className=" relative flex flex-col border bg-white border-gray-200 rounded-2xl items-center text-center space-y-4">
+                    <div key={index} className=" relative flex flex-col border bg-white border-gray-200 rounded-2xl items-center text-center space-y-4 ">
 
 
                         <div className='absolute top-4 right-4 rounded-full px-3 py-2 bg-gradient-to-r from-blue-500 to-purple-500'>

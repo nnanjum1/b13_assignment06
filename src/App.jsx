@@ -12,6 +12,7 @@ import { ToastContainer } from 'react-toastify'
 import ToolTabs from './ToolTab'
 import CartTab from './CartTab'
 import GetStarted from './GetStarted'
+import Pricing from './Pricing'
 
 function App() {
   const [activeTab, setActiveTab] = useState("products");
@@ -37,6 +38,7 @@ function App() {
         <CartTab cart={cart} setCart={setCart} />
       )}
       <GetStarted />
+      <Pricing />
       <ToastContainer position="top-right" />
     </>
   )

@@ -5,7 +5,7 @@ const Navbar = () => {
 
 
         <div className="navbar bg-white">
-            <div className="w-[90%] md:[75%] flex">
+            <div className="w-[90%] md:[75%] flex mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
