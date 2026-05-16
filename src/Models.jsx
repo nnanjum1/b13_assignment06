@@ -79,10 +79,10 @@ const Models = ({ cart, setCart }) => {
                             disabled={isInCart}
                             className={`w-full mt-auto py-4  text-white font-bold rounded-2xl transition-colors shadow-lg shadow-purple-100 ${isInCart
                                 ? "bg-green-600 cursor-not-allowed"
-                                : "bg-[#8B2CFF] hover:bg-[#7a1fe0]"
+                                : "bg-[#8B2CFF] hover:bg-[#7045a0]"
                                 }`}
                         >
-                            {isInCart ? "Added to Cart ✓" : "Buy Now"}
+                            {isInCart ? "Added to Cart" : "Buy Now"}
                         </button>
                     </div>
                 );
