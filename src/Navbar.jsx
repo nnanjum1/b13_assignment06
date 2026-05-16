@@ -1,11 +1,8 @@
-const Navbar = () => {
+const Navbar = ({ cart }) => {
     return (
 
-
-
-
         <div className="navbar bg-white">
-            <div className="w-[90%] md:[75%] flex mx-auto">
+            <div className="w-[95%] md:[75%] flex mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -36,9 +33,20 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <ul className="flex items-center gap-5"><li><a><img className="w-4 h-4" src="./assets/products/shopping-cart.png" alt="" /></a></li>
-                        <li><a></a>Login</li>
-                        <li><a className="btn bg-gradient-to-r from-blue-500 to-purple-500 rounded-full text-white">Get Started</a>
+                    <ul className="flex items-center gap-3  md:gap-5">
+                        <li className="relative">
+                            <a>
+                                <img className="w-4 h-4" src="./assets/products/shopping-cart.png" alt="" />
+                            </a>
+
+                            {cart.length > 0 && (
+                                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[10px] w-5 h-5 flex items-center justify-center rounded-full">
+                                    {cart.length}
+                                </span>
+                            )}
+                        </li>
+                        <li><a className="text-[16px]"></a>Login</li>
+                        <li><a className=" bg-gradient-to-r from-blue-500 to-purple-500 rounded-full text-center text-white text-[14px] md:text-[16px] px-3 py-2">Get Started</a>
                         </li>  </ul>
                 </div>
             </div>

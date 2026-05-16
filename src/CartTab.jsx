@@ -1,21 +1,29 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const CartTab = ({ cart, setCart }) => {
 
     const handleRemove = (id) => {
-        console.log("Removing item with ID:", id);
-        console.log("Current Cart IDs:", cart.map(i => i.id));
-
         const updatedCart = cart.filter((item) => item.id !== id);
-
-        console.log("New Cart Length:", updatedCart.length);
         setCart(updatedCart);
+
+        toast.error("Item removed from cart");
     };
 
     const totalPrice = cart.reduce(
         (sum, item) => sum + item.price * (item.quantity || 1),
         0
     );
+
+
+
+
+    const handleCheckout = () => {
+
+
+        setCart([]);
+        toast.success("Order placed successfully");
+    };
 
     return (
         <div className='w-[90%] md:w-[75%] border border-gray-200 mt-10 mb-20  rounded-2xl p-10 mx-auto'>
@@ -65,7 +73,7 @@ const CartTab = ({ cart, setCart }) => {
             </div>
 
             <button
-                onClick={() => setCart([])}
+                onClick={handleCheckout}
                 disabled={cart.length === 0}
                 className={`text-[16px] text-center p-4 rounded-full font-bold w-full mt-4
         ${cart.length === 0

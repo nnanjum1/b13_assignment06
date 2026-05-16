@@ -1,7 +1,7 @@
 const Banner = () => {
     return (
         <div className="w-[90%] md:w-[75%] mx-auto my-16">
-            <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-10">
                 <div className="w-full md:w-1/2 space-y-6" >
                     <div className="inline-flex w-fit bg-purple-100 items-center gap-1.5 rounded-full py-2 px-4 mb-4">
                         <div className="w-4 h-4 rounded-full  bg-purple-200 flex items-center justify-center">

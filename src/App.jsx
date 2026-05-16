@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <Navbar cart={cart} />
       <hr className="border-t border-gray-200" />
       <Banner />
       <Stats />
